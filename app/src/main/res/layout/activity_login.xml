@@ -52,21 +52,25 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/username" />
+                        android:hint="@string/username"
+                        android:text="@={viewModel.user.name}" />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/password"
-                        android:inputType="textPassword" />
+                        android:inputType="textPassword"
+                        android:text="@={viewModel.user.password}" />
 
                     <Switch
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:checked="@={viewModel.rememberMe}" />
 
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:onClick="@{() -> viewModel.onLoginClicked()}"
                         android:text="@string/login" />
                 </LinearLayout>
             </RelativeLayout>
