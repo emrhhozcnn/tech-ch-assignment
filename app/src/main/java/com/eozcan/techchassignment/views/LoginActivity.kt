@@ -1,7 +1,8 @@
-package com.eozcan.techchassignment
+package com.eozcan.techchassignment.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.eozcan.techchassignment.R
 
 class LoginActivity : AppCompatActivity() {
 
