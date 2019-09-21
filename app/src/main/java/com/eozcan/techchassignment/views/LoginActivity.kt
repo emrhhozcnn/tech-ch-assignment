@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.eozcan.techchassignment.R
+import com.eozcan.techchassignment.utils.AlertUtil
 import com.eozcan.techchassignment.utils.SharedPreferencesUtil
 import com.eozcan.techchassignment.constants.Params
 import com.eozcan.techchassignment.databinding.ActivityLoginBinding
@@ -23,6 +24,10 @@ class LoginActivity : AppCompatActivity() {
             override fun onLogicSucceded(rememberMeActive: Boolean) {
                 SharedPreferencesUtil.setBoolean(this@LoginActivity, Params.KEY_REMEMBER_ME, rememberMeActive)
                 // TODO start ordersActivity
+            }
+
+            override fun onLoginFailed() {
+                AlertUtil.showAlert(this@LoginActivity, R.string.app_name, R.string.login_fail_warning, R.string.ok)
             }
         })
 
