@@ -7,4 +7,8 @@
     <string name="login">Giriş Yap</string>
     <string name="login_fail_warning">Kullanıcı adı ve şifre alanı boş veya hatalı kullanıcı adı ve şifre!</string>
     <string name="ok">Tamam</string>
+
+    <!-- Orders -->
+    <string name="my_orders">Siparişlerim</string>
+    <string name="exit">Çıkış Yap</string>
 </resources>

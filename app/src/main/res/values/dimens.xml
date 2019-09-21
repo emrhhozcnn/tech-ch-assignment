@@ -19,4 +19,9 @@
     <dimen name="switch_radius">10dp</dimen>
     <dimen name="switch_track_stroke">3dp</dimen>
     <dimen name="switch_thumb_stroke">10dp</dimen>
+
+    <!-- Orders -->
+    <dimen name="orders_title_text_size">18sp</dimen>
+    <dimen name="orders_title_padding_top">20dp</dimen>
+    <dimen name="orders_title_padding_bottom">5dp</dimen>
 </resources>
