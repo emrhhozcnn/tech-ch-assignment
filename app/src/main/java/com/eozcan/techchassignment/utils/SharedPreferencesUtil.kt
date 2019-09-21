@@ -1,10 +1,10 @@
-package com.eozcan.techchassignment.Utils
+package com.eozcan.techchassignment.utils
 
 import android.content.Context
 
 class SharedPreferencesUtil {
     companion object {
-        private val PREF_FNAME = ".session"
+        private const val PREF_FNAME = ".session"
         fun setBoolean(context: Context, key: String, value: Boolean) {
             val sharedPref = context.getSharedPreferences(PREF_FNAME, Context.MODE_PRIVATE)
             val editor = sharedPref.edit()

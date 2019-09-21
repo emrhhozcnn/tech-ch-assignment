@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.eozcan.techchassignment.R
-import com.eozcan.techchassignment.Utils.SharedPreferencesUtil
+import com.eozcan.techchassignment.utils.SharedPreferencesUtil
 import com.eozcan.techchassignment.constants.Params
 import com.eozcan.techchassignment.databinding.ActivityLoginBinding
 import com.eozcan.techchassignment.viewmodels.LoginListener
