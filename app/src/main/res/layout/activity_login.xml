@@ -52,26 +52,39 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/bg_white_with_border_gray"
+                        android:drawableStart="@drawable/ic_perm_identity_gray_24dp"
+                        android:drawablePadding="@dimen/edittext_drawable_padding"
                         android:hint="@string/username"
+                        android:padding="@dimen/edittext_padding"
                         android:text="@={viewModel.user.name}" />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/login_fields_margin_top"
+                        android:background="@drawable/bg_white_with_border_gray"
+                        android:drawableStart="@drawable/ic_lock_outline_gray_24dp"
+                        android:drawablePadding="@dimen/edittext_drawable_padding"
                         android:hint="@string/password"
                         android:inputType="textPassword"
+                        android:padding="@dimen/edittext_padding"
                         android:text="@={viewModel.user.password}" />
 
                     <Switch
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/login_fields_margin_top"
                         android:checked="@={viewModel.rememberMe}" />
 
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/login_btn_margin_top"
+                        android:background="@drawable/bg_red"
                         android:onClick="@{() -> viewModel.onLoginClicked()}"
-                        android:text="@string/login" />
+                        android:text="@string/login"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </RelativeLayout>
         </ScrollView>
