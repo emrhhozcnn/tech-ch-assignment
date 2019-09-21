@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">TechChAssignment</string>
+    <string name="app_name">MARKETİM</string>
+
+    <string name="username">Kullanıcı Adı</string>
+    <string name="password">Şifre</string>
+    <string name="login">Giriş Yap</string>
 </resources>
