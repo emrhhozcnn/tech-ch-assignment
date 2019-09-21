@@ -15,7 +15,10 @@ class LoginActivity : AppCompatActivity() {
 
         val binding =
             DataBindingUtil.setContentView<ActivityLoginBinding>(this, R.layout.activity_login)
-        binding.viewModel = LoginViewModel()
+        // viewModel'den activity başlatılamayacağı için runnable ile action'ı yakalandım.
+        binding.viewModel = LoginViewModel(Runnable {
+            // TODO start ordersActivity
+        })
 
     }
 }
