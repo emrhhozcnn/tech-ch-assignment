@@ -71,11 +71,27 @@
                         android:padding="@dimen/edittext_padding"
                         android:text="@={viewModel.user.password}" />
 
-                    <Switch
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/login_fields_margin_top"
-                        android:checked="@={viewModel.rememberMe}" />
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="@={viewModel.rememberMe}"
+                            android:thumb="@drawable/bg_switch_thumb"
+                            android:track="@drawable/bg_switch_track" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/login_remember_me_text_margin_start"
+                            android:text="@string/remember_me"
+                            android:textColor="@color/app_gray_dark" />
+                    </LinearLayout>
 
                     <Button
                         android:layout_width="match_parent"

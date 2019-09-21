@@ -6,4 +6,5 @@
     <!-- general colors -->
     <color name="app_red">#ed4035</color>
     <color name="app_gray">#a9a9a9</color>
+    <color name="app_gray_dark">#4b4b4b</color>
 </resources>
