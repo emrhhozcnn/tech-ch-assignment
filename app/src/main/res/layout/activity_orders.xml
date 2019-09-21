@@ -36,19 +36,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="@dimen/orders_footer_padding">
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/orders_footer_btn_margin_horizontal"
                 android:layout_weight="1"
-                android:text="@string/my_orders" />
+                android:background="@drawable/bg_red_border"
+                android:text="@string/my_orders"
+                android:textColor="@color/app_red" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/orders_footer_btn_margin_horizontal"
                 android:layout_weight="1"
-                android:text="@string/exit" />
+                android:background="@drawable/bg_red"
+                android:text="@string/exit"
+                android:textColor="@android:color/white" />
         </LinearLayout>
     </RelativeLayout>
 </layout>
