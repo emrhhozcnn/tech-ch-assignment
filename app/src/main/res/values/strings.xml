@@ -14,4 +14,7 @@
     <string name="order_status_preparing">Hazırlanıyor</string>
     <string name="order_status_order_on_way">Siparişin Yolda</string>
     <string name="order_status_waiting">Onay Bekliyor</string>
+    <string name="exit_message">Çıkış yapmak istiyor musunuz?</string>
+    <string name="i_want">İstiyorum</string>
+    <string name="i_dont_want">İstemiyorum</string>
 </resources>

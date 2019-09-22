@@ -8,7 +8,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class OrdersViewModel : BaseObservable() {
+class OrdersViewModel(val ordersPageListener: OrdersPageListener) : BaseObservable() {
     val adapter = OrdersAdapter()
 
     init {
@@ -23,4 +23,12 @@ class OrdersViewModel : BaseObservable() {
             }
         })
     }
+
+    fun onExitButtonClicked() {
+        ordersPageListener.onExitPageClicked()
+    }
+}
+
+interface OrdersPageListener {
+    fun onExitPageClicked()
 }
