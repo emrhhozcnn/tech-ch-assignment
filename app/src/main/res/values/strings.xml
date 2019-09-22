@@ -11,4 +11,7 @@
     <!-- Orders -->
     <string name="my_orders">Siparişlerim</string>
     <string name="exit">Çıkış Yap</string>
+    <string name="order_status_preparing">Hazırlanıyor</string>
+    <string name="order_status_order_on_way">Siparişin Yolda</string>
+    <string name="order_status_waiting">Onay Bekliyor</string>
 </resources>

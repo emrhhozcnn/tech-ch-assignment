@@ -7,5 +7,6 @@ data class Order(
     val orderName: String,
     val productPrice: Double,
     val productState: String,
-    val productDetail: ProductDetail
+    val productDetail: ProductDetail,
+    var productExpanded: Boolean = false
 )

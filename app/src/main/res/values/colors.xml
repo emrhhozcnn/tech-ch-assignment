@@ -7,4 +7,10 @@
     <color name="app_red">#ed4035</color>
     <color name="app_gray">#a9a9a9</color>
     <color name="app_gray_dark">#4b4b4b</color>
+
+    <!-- Orders -->
+    <color name="orders_seperator_vertical">#c2c2c2</color>
+    <color name="preparing">#ff8b00</color>
+    <color name="order_on_way">#59a349</color>
+    <color name="order_product_detail_bg">#e2e4e5</color>
 </resources>
