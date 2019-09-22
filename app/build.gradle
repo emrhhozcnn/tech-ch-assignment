@@ -28,6 +28,7 @@ android {
 }
 
 dependencies {
+    // android studio nun default eklediği kütüphaneler.
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
@@ -37,12 +38,15 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    // uygulama genelinde kullanılan viewModel için
     implementation 'android.arch.lifecycle:extensions:1.1.1'
 
+    // verilen endpoint e istek atmak, cevabı almak ve gelen veriyi parse etmek için gerekli kütüphaneler
     implementation 'com.squareup.retrofit2:retrofit:2.6.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
     implementation "com.squareup.retrofit2:adapter-rxjava2:2.6.1"
     implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
 
+    // siparişlerim sayfasındaki recyclerview (liste) için
     implementation "com.android.support:recyclerview-v7:28.0.0"
 }
